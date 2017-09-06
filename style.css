@@ -711,6 +711,10 @@ h6 {
     h2 {
         font-size: 40px;
     }
+	
+    .mouse {
+	bottom: 10px;
+    }
 
     .card {
         width: 250px;

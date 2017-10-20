@@ -16,6 +16,7 @@ body {
 #telaloading {
     background-color: #ecf0f1;
     animation: cor 2s alternate infinite;
+	transition: 2s;	
 }
 
 @keyframes cor {
@@ -496,6 +497,7 @@ nav {
     border: 1px solid white;
     font-weight: 700;
     color: white;
+	border-radius: 0;
 }
 
 .btn-estilo-trab:hover {

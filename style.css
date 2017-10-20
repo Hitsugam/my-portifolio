@@ -9,19 +9,90 @@ body {
 }
 
 
+
+
 /* --- tela de loading --- */
 
-
 #telaloading {
-    width: 100%;
-    height: 100vh;
-    background-color: #2c3e50;
+    background-color: #ecf0f1;
+    animation: cor 2s alternate infinite;
+}
+
+@keyframes cor {
+    0% { background-color: #ecf0f1;}
+    100% {background-color: #2c3e50;}
+}
+
+#telaloading, .posicao{
+    z-index: 1000;
     position: fixed;
-    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
+
+.posicao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra {
+    width: 5px;
+    height: 20px;
+    background: white;
+    border: 1px solid #2c3e50;
+    margin: 10px;
+}
+
+.barra1 {
+    animation: cresce 0.5s alternate infinite;  
+}
+
+.barra2 {
+    animation: cresce2 0.5s alternate infinite;
+    animation-delay: 0.5s;
+}
+
+.barra3 {
+    animation: cresce 0.5s alternate infinite;
+  
+}
+
+.barra4 {
+    animation: cresce2 0.5s alternate infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes cresce {
+    0% { 
+        transform: scale(1,1);
+    }
+  
+    100% { 
+        transform: scale(1,2);
+    }
+}
+
+@keyframes cresce2 {
+    0% { 
+        transform: scale(1,1);
+    }
+  
+    100% { 
+        transform: scale(1,2);
+    }
 }
 
 
+
 /* --- /tela de loading --- */
+
+
+
+
+
+
+
 
 
 /* --- barra de navegação --- */
@@ -491,7 +562,6 @@ nav {
 }
 
 .face:hover {
-    background: url('imgs/icones/face.svg');
     border: 1px solid #e74c3c;
 }
 

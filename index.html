@@ -35,7 +35,7 @@
     <meta name="twitter:image" content="https://exemplo.com/imagem.png">
     <meta name="twitter:creator" content="@exemplo">
 
- 
+    
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -59,6 +59,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- modal projetos -->
+    <script type="text/javascript" src="projetos.js"></script>
+
     <script type="text/javascript">
         
         //tela de carregamento da pagina
@@ -73,6 +77,7 @@
 
 <body onload="telaout()">
 
+    <!--tela de loading-->
     <div id="telaloading" >
         <div class="posicao">
             <div class="barra barra1"></div>
@@ -81,7 +86,12 @@
             <div class="barra barra4"></div>
         </div>
     </div>
+    <!-- fim tela de loading-->
 
+
+
+
+    <!-- Menu -->
     <nav>
         <div id="mySidenav" class="sidenav">
         	<div>
@@ -104,9 +114,12 @@
         	</div>
         </span>
     </nav>
+    <!-- fim menu -->
 
 
 
+
+    <!-- home -->
     <main class="capa scrollspy" id="home">
         <div class="texto-capa">
 	        <div class="animacao-nome">
@@ -121,7 +134,12 @@
             </a>
         </div>
     </main>
+    <!--fim home -->
 
+
+
+
+    <!-- area do sobre -->
     <section id="sobre" class="bg-white scrollspy">
         <div class="container">
             <h2 class="text-uppercase">Sobre</h2>
@@ -138,7 +156,12 @@
             </div>
         </div>
     </section>
+    <!--fim area do sobre-->
 
+
+
+
+    <!-- area de serviços -->
     <section id="servicos" class="scrollspy">
         <div class="container">
             <h2 class="text-uppercase">Serviços</h2>
@@ -162,7 +185,12 @@
             </div>
         </div>
     </section>
+    <!-- fim area de serviços -->
 
+
+
+
+    <!-- area de skills -->
     <section>
         <div class="container">
             <h2 class="text-uppercase">Skills</h2>
@@ -176,65 +204,103 @@
             </div>
         </div>
     </section>
+    <!-- rea de skills -->
 
+
+
+
+    <!-- area de projetos -->
     <section id="projetos" class="scrollspy">
 
         <div class="container-fluid">
             <h2 class="text-uppercase">projetos</h2>
-            <div class="row margin-bottom-section">
-                        <div class="col-xs-12 col-sm-6 col-md-4 trab-1 centro-elem">
-                            <img src="imgs/mockup.jpg" class="image-trab image-trab-1">
-                            <div class="middle">
-                                <a href="#" class="btn btn-default btn-estilo-trab text-uppercase" title="Acessar Projeto">
-                                    acessar
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 trab-1 centro-elem">
-                            <img src="imgs/mockup.jpg" class="image-trab image-trab-2">
-                            <div class="middle">
-                                <a href="#" class="btn btn-default btn-estilo-trab text-uppercase" title="Acessar Projeto">
-                                    acessar
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 trab-1 centro-elem">
-                            <img src="imgs/mockup.jpg" class="image-trab image-trab-3">
-                            <div class="middle">
-                                <a href="#" class="btn btn-default btn-estilo-trab text-uppercase" title="Acessar Projeto">
-                                    acessar
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 trab-1 centro-elem">
-                            <img src="imgs/mockup.jpg" class="image-trab image-trab-4">
-                            <div class="middle">
-                                <a href="#" class="btn btn-default btn-estilo-trab text-uppercase" title="Acessar Projeto">
-                                    acessar
-                                </a>
-                            </div>
-                        </div>
-                        <div class="hidden-xs col-sm-6 col-md-4 trab-1 centro-elem">
-                            <img src="imgs/mockup.jpg" class="image-trab image-trab-5">
-                            <div class="middle">
-                                <a href="#" class="btn btn-default btn-estilo-trab text-uppercase" title="Acessar Projeto">
-                                    acessar
-                                </a>
-                            </div>
-                        </div>
-                        <div class="hidden-xs col-sm-6 col-md-4 trab-1 centro-elem">
-                            <img src="imgs/mockup.jpg" class="image-trab image-trab-6">
-                            <div class="middle">
-                                <a href="#" class="btn btn-default btn-estilo-trab text-uppercase" title="Acessar Projeto">
-                                    acessar
-                                </a>
-                            </div>
-                        </div>
+
+            <!-- area de acessar os projetos -->
+            <div class="row margin-bottom-section"> 
+                <div class="col-xs-12 col-sm-6 col-md-4 trab-1 centro-elem">
+                    <img src="imgs/mockup.jpg" class="image-trab image-trab-1">
+                    <div class="middle">
+                        <button class="btn btn-default btn-estilo-trab text-uppercase" title="Mais Informações" onclick="projetoOne()">
+                            info
+                        </button>             
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 trab-1 centro-elem">
+                    <img src="imgs/mockup.jpg" class="image-trab image-trab-2">
+                    <div class="middle">
+                        <button class="btn btn-default btn-estilo-trab text-uppercase" title="Mais Informações" onclick="projetoTwo()">
+                            info
+                        </button>             
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 trab-1 centro-elem">
+                    <img src="imgs/mockup.jpg" class="image-trab image-trab-3">
+                    <div class="middle">
+                        <button class="btn btn-default btn-estilo-trab text-uppercase" title="Mais Informações" onclick="projetoTree()">
+                            info
+                        </button>             
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 trab-1 centro-elem">
+                    <img src="imgs/mockup.jpg" class="image-trab image-trab-4">
+                    <div class="middle">
+                        <button class="btn btn-default btn-estilo-trab text-uppercase" title="Mais Informações" onclick="projetoFour()">
+                            info
+                        </button>             
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-6 col-md-4 trab-1 centro-elem">
+                    <img src="imgs/mockup.jpg" class="image-trab image-trab-5">
+                    <div class="middle">
+                        <button class="btn btn-default btn-estilo-trab text-uppercase" title="Mais Informações" onclick="projetoFive()">
+                            info
+                        </button>             
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-6 col-md-4 trab-1 centro-elem">
+                    <img src="imgs/mockup.jpg" class="image-trab image-trab-6">
+                    <div class="middle">
+                        <button class="btn btn-default btn-estilo-trab text-uppercase" title="Mais Informações" onclick="projetoSix()">
+                            info
+                        </button>             
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+
+
+
+        <!-- projetos modal -->
+        <div id="bg-modal-meu">
+            <div class="modal-meu" id="projeto-um">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeModal()" title="Fechar">&times;</a>
+            </div>
+            <div class="modal-meu" id="projeto-dois">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeModal()" title="Fechar">&times;</a>
+            </div>
+            <div class="modal-meu" id="projeto-tres">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeModal()" title="Fechar">&times;</a>
+            </div>
+            <div class="modal-meu" id="projeto-quatro">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeModal()" title="Fechar">&times;</a>
+            </div>
+            <div class="modal-meu" id="projeto-cinco">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeModal()" title="Fechar">&times;</a>
+            </div>
+            <div class="modal-meu" id="projeto-seis">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeModal()" title="Fechar">&times;</a>
             </div>
         </div>
 
-    </section>
 
+    </section>
+    <!-- fim area de projetos -->
+
+
+
+
+    <!-- area de contato -->
     <section id="contato" class="scrollspy">
 
         <div class="container">
@@ -289,12 +355,19 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <!-- fim area de contato -->
 
+
+
+
+    <!-- pe do site -->
     <footer class="rodape">
     	<h6>Copyright &copy; 2017 by Lucas Gonçalves</h6>
     </footer>
+    <!-- fim pe do site -->
+
+
 
 
 
@@ -307,6 +380,7 @@
 
     <!-- Materialize Js -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    
 
   	<script type="text/javascript">
 
